@@ -9,7 +9,7 @@ gap2 = 0.002;
 
 panel_thick = 2;
 
-in = 26/2 + 2;
+in = 26/2;
 out = in+panel_thick;
 sh = 5;
 rr = 50;
@@ -59,13 +59,13 @@ module L()
         
         translate([-rr+rr2, 0, hh2]) rotate([90, -ss2, 0])
         {
-            translate([0, 0, -5])cylinder(10, 1.6, 1.6, $fn=30);
+            translate([0, 0, -5])cylinder(10, 1.8, 1.8, $fn=30);
             translate([0, 0, 1])cylinder(5, 6.5/2+0.1, 6.5/2+0.1, $fn=6);
             translate([0, 0, -5-1])cylinder(5, 6.5/2+0.1, 6.5/2+0.1, $fn=6);
         }
         translate([-rr+rr3, 0, hh3]) rotate([90, -ss3, 0])
         {
-            translate([0, 0, -5])cylinder(10, 1.6, 1.6, $fn=30);
+            translate([0, 0, -5])cylinder(10, 1.8, 1.8, $fn=30);
             translate([0, 0, 1])cylinder(5, 6.5/2+0.1, 6.5/2+0.1, $fn=6);
             translate([0, 0, -5-1])cylinder(5, 6.5/2+0.1, 6.5/2+0.1, $fn=6);
         }
